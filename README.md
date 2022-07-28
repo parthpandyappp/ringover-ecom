@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# Ringover Ecommerce
+This project is a result of the task assigned for the application of SDE intern (front-end engineer) at Ringover, developed using ReactJs.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tech stack
+- ReactJS
+  - `useContext`
+  - `useReducer`
+  - `react-router-dom`
+  - `react-icons`
+- HTML5
+- CSS3
 
-## Available Scripts
+## Best practices
+- Implementation of ***Barrels*** in ReactJs.
+- Instance of ***holy grail layout*** for design.
+- Implementation of ***Absolute paths*** in ReactJS.
+- Proper ***segregation*** of `components` and `pages` in the application.
+- Implementation of ***Pure functions*** as per ECMA standards in Javascript.
+- Implementation of `useContext` + `useReducer` for proper ***state management*** across pages.
 
-In the project directory, you can run:
+## Early preview
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Directory tree
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+ <meta name="Author" content="Made by 'tree'">
+ <meta name="GENERATOR" content="$Version: $ tree v1.8.0 (c) 1996 - 2018 by Steve Baker, Thomas Moore, Francesc Rocher, Florian Sesser, Kyosuke Tokoro $">
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+</head>
+<body>
+	├── <a href=".//jsconfig.json">jsconfig.json</a><br>
+	├── <a href=".//package.json">package.json</a><br>
+	├── <a href=".//package-lock.json">package-lock.json</a><br>
+	├── <a href=".//public/">public</a><br>
+	│   ├── <a href=".//public/favicon.ico">favicon.ico</a><br>
+	│   ├── <a href=".//public/index.html">index.html</a><br>
+	│   ├── <a href=".//public/manifest.json">manifest.json</a><br>
+	│   └── <a href=".//public/robots.txt">robots.txt</a><br>
+	├── <a href=".//README.md">README.md</a><br>
+	├── <a href=".//result.md">result.md</a><br>
+	└── <a href=".//src/">src</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/App.css">App.css</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/App.jsx">App.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/assets/">assets</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/assets/christiano.jpg">christiano.jpg</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/assets/ikercasillas.jpg">ikercasillas.jpg</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/assets/james.jpg">james.jpg</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/assets/shoe2.png">shoe2.png</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/assets/shoe.jpg">shoe.jpg</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/assets/tonikroos.jpg">tonikroos.jpg</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/assets/websitelogo.png">websitelogo.png</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/assets/zidane.jpg">zidane.jpg</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/components/">components</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/Cart.jsx">Cart.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/CartProduct.jsx">CartProduct.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/Filters.jsx">Filters.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/Footer.jsx">Footer.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/index.js">index.js</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/Nav.jsx">Nav.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/ProductCard.jsx">ProductCard.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/components/Products.jsx">Products.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/components/SingleProduct.jsx">SingleProduct.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/context/">context</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/context/DataProvider.js">DataProvider.js</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/context/index.js">index.js</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/db/">db</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/db/index.js">index.js</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/db/products.js">products.js</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/db/team.js">team.js</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/db/users.js">users.js</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/helpers/">helpers</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/helpers/filter-helpers.js">filter-helpers.js</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/helpers/index.js">index.js</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/index.js">index.js</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/pages/">pages</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/pages/Contact.jsx">Contact.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/pages/Home.jsx">Home.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/pages/index.jsx">index.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/pages/SingleProductPage.jsx">SingleProductPage.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/pages/Store.jsx">Store.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/pages/Team.jsx">Team.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/reducers/">reducers</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/reducers/index.js">index.js</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/reducers/product-reducer.js">product-reducer.js</a><br>
+	&nbsp;&nbsp;&nbsp; ├── <a href=".//src/routes/">routes</a><br>
+	&nbsp;&nbsp;&nbsp; │   ├── <a href=".//src/routes/Endpoints.jsx">Endpoints.jsx</a><br>
+	&nbsp;&nbsp;&nbsp; │   └── <a href=".//src/routes/index.js">index.js</a><br>
+	&nbsp;&nbsp;&nbsp; └── <a href=".//src/styles/">styles</a><br>
+	<br><br>
+	</p>
+</body>
+</html>
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
