@@ -6,23 +6,23 @@ import { IoIosArrowBack } from "react-icons/io";
 const SingleProduct = ({ product }) => {
   const { dispatch } = useProductData();
   return (
-    <article class="flex-article">
-      <div class="feature-pills">
+    <article className="flex-article">
+      <div className="feature-pills">
         <Link to="/store" className="mo-decoration">
           <IoIosArrowBack className="cursor-pointer" />
         </Link>
         <h5>{product.name}</h5>
       </div>
-      <div class="product-container">
-        <div class="product-preview">
+      <div className="product-container">
+        <div className="product-preview">
           <img
             src={product.imgSrc.link}
             alt={product.imgSrc.alt}
-            class="product-bg"
+            className="product-bg"
           />
-          <div class="feature-pills">
-            <p class="text-sm">Rate the product</p>
-            <div class="ratings">
+          <div className="feature-pills">
+            <p className="text-sm">Rate the product</p>
+            <div className="ratings">
               <AiOutlineStar className="text-md checked" />
               <AiOutlineStar className="text-md checked" />
               <AiOutlineStar className="text-md checked" />
@@ -31,93 +31,93 @@ const SingleProduct = ({ product }) => {
             </div>
           </div>
         </div>
-        <div class="product-min-preview">
+        <div className="product-min-preview">
           <img
             src={product.imgSrc.link}
             alt={product.imgSrc.alt}
-            class="product-md"
+            className="product-md"
           />
           <img
             src={product.imgSrc.link}
             alt={product.imgSrc.alt}
-            class="product-md"
+            className="product-md"
           />
           <img
             src={product.imgSrc.link}
             alt={product.imgSrc.alt}
-            class="product-md"
+            className="product-md"
           />
         </div>
-        <div class="product-feature">
-          <div class="detail-section">
-            <p class="text-md">{product.name}</p>
-            <p class="text-sm">By {product.brand}</p>
+        <div className="product-feature">
+          <div className="detail-section">
+            <p className="text-md">{product.name}</p>
+            <p className="text-sm">By {product.brand}</p>
           </div>
-          <div class="detail-section">
-            <div class="ratings">
+          <div className="detail-section">
+            <div className="ratings">
               <AiOutlineStar className="text-md checked" />
               <AiOutlineStar className="text-md checked" />
               <AiOutlineStar className="text-md checked" />
               <AiOutlineStar className="text-md" />
               <AiOutlineStar className="text-md" />
             </div>
-            <p class="text-sm">80 reviews</p>
+            <p className="text-sm">80 reviews</p>
           </div>
-          <div class="detail-section">
-            <p class="text-sm">Rs. {product.price}/-</p>
-            <p class="text-xs">
+          <div className="detail-section">
+            <p className="text-sm">Rs. {product.price}/-</p>
+            <p className="text-xs">
               Get an exclusive 20% off shopping with HDFC bank
             </p>
           </div>
-          <div class="specs">
-            <div class="spec-hero">
-              <p class="text-md">Front&ensp;</p>
-              <div class="genre">
-                <p class="genre-1"></p>
-                <p class="genre-2"></p>
-                <p class="genre-3"></p>
+          <div className="specs text-right">
+            <div className="spec-hero text-right">
+              <p className="text-md">Front</p>
+              <div className="genre">
+                <p className="genre-1"></p>
+                <p className="genre-2"></p>
+                <p className="genre-3"></p>
               </div>
             </div>
-            <div class="spec-hero">
-              <p class="text-md">Middle&ensp;</p>
-              <div class="genre">
-                <p class="genre-1"></p>
-                <p class="genre-2"></p>
-                <p class="genre-3"></p>
+            <div className="spec-hero ">
+              <p className="text-md">Middle</p>
+              <div className="genre">
+                <p className="genre-1"></p>
+                <p className="genre-2"></p>
+                <p className="genre-3"></p>
               </div>
             </div>
-            <div class="spec-hero">
-              <p class="text-md">Back&ensp;</p>
-              <div class="genre">
-                <p class="genre-1"></p>
-                <p class="genre-2"></p>
-                <p class="genre-3"></p>
+            <div className="spec-hero ">
+              <p className="text-md">Back</p>
+              <div className="genre">
+                <p className="genre-1"></p>
+                <p className="genre-2"></p>
+                <p className="genre-3"></p>
               </div>
             </div>
-            <div class="spec-hero">
-              <p class="text-md">Sole&ensp;</p>
-              <div class="genre">
-                <p class="genre-1"></p>
-                <p class="genre-2"></p>
-                <p class="genre-3"></p>
+            <div className="spec-hero ">
+              <p className="text-md">Sole</p>
+              <div className="genre">
+                <p className="genre-1"></p>
+                <p className="genre-2"></p>
+                <p className="genre-3"></p>
               </div>
             </div>
-            <div class="spec-hero">
-              <p class="text-md">Size</p>
-              <div class="genre">
-                <p class="genre-1 sizes">7</p>
-                <p class="genre-2 sizes">8</p>
-                <p class="genre-3 sizes">9</p>
-                <p class="genre-3 sizes">10</p>
+            <div className="spec-hero ">
+              <p className="text-md">Size</p>
+              <div className="genre">
+                <p className="genre-1 sizes">7</p>
+                <p className="genre-2 sizes">8</p>
+                <p className="genre-3 sizes">9</p>
+                <p className="genre-3 sizes">10</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="center-h">
-        <button class="btn btn-secondary">share design</button>
+      <div className="center-h">
+        <button className="btn btn-secondary">share design</button>
         <button
-          class="btn btn-primary"
+          className="btn btn-primary"
           onClick={() =>
             dispatch({ type: "ADD_TO_CART", payload: { product } })
           }

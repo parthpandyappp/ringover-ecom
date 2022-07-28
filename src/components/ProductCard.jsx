@@ -1,14 +1,14 @@
 const ProductCard = ({ product }) => {
   return (
-    <div class="card">
+    <div className="card">
       <img
         src={product.imgSrc.link}
         alt={product.imgSrc.alt}
-        class="product-md"
+        className="product-md"
       />
-      <div class="card-details">
-        <p class="text-md">{product.name}</p>
-        <p class="text-sm">{product.price}</p>
+      <div className="card-details">
+        <p className="text-md">{product.name}</p>
+        <p className="text-sm">Rs. {product.price}/-</p>
       </div>
     </div>
   );

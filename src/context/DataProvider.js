@@ -1,5 +1,5 @@
 import { useContext, createContext, useReducer } from "react";
-import { productData } from "db"
+import { productData, team } from "db"
 
 const dataContext = createContext(null);
 
@@ -21,6 +21,7 @@ const DataProvider = ({ children }) => {
 
     const [state, dispatch] = useReducer(dataReducer, {
         products: productData,
+        team,
         cart: [],
     })
     return (
