@@ -12,6 +12,7 @@ This project is a result of the task assigned for the application of SDE intern 
 
 ## Best practices
 - Implementation of ***Barrels*** in ReactJs.
+- Up to date ***version control*** with `git`
 - Instance of ***holy grail layout*** for design.
 - Implementation of ***Absolute paths*** in ReactJS.
 - Proper ***segregation*** of `components` and `pages` in the application.
