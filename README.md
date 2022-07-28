@@ -19,6 +19,26 @@ This project is a result of the task assigned for the application of SDE intern 
 - Implementation of `useContext` + `useReducer` for proper ***state management*** across pages.
 
 ## Early preview
+- Store (without cart items) 
+<p align="center">
+  <img src="https://i.ibb.co/0Zv3vBC/mock-store.png" title="store"/>
+</p>
+
+- Store (with cart items) 
+<p align="center">
+  <img src="https://i.ibb.co/Zhjjjjt/mock-store-1.png" title="store-2"/>
+</p>
+
+- Contact 
+<p align="center">
+  <img src="https://i.ibb.co/v32vJTw/mock-contact.png" title="contact"/>
+</p>
+
+- Team 
+<p align="center">
+  <img src="https://i.ibb.co/wywWSvm/mock-teams.png" title="team"/>
+</p>
+
 
 
 ## Directory tree
