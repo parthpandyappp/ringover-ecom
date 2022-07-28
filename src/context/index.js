@@ -1,0 +1,1 @@
+export { useProductData, DataProvider } from "./DataProvider"

@@ -1,0 +1,1 @@
+export { productReducer, initialActionObj } from "./product-reducer"
