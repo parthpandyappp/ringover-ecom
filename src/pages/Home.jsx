@@ -1,5 +1,9 @@
 const Home = () => {
-  return <h1>Home</h1>;
+  return (
+    <div className="main-container">
+      <h4>Welcome to Ringover Ecommerce!</h4>
+    </div>
+  );
 };
 
 export { Home };
