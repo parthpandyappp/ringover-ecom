@@ -415,6 +415,21 @@ html,
   text-align: right;
 }
 
+.journey-section {
+  width: 30rem;
+}
+
+.journey-container {
+  font-size: 24px;
+  text-align: center;
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
 @media all and (max-width: 840px) {
   .flex-main {
     flex-direction: column;
@@ -434,7 +449,7 @@ html,
   .product-min-preview {
     flex-direction: row;
   }
-  .feature-hero{
+  .feature-hero {
     flex-direction: row;
   }
 }
